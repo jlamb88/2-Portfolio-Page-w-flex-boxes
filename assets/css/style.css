@@ -1,7 +1,7 @@
 
 /* universal selectors */
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
     padding: 0;
     margin: 0;
 }
@@ -15,6 +15,7 @@
     float: right;
     margin-left: 25px;
 }
+
 
 /* href formatting */
 a {
@@ -32,6 +33,7 @@ a::after {content: "\2503"}
 p {
     font-size: 16px;
     line-height: 150%;
+    color:#0a0f61;
 }
 
 /* body */
@@ -65,7 +67,6 @@ body {
     padding: 0px 20px;
     float: right;
     position: absolute; right: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     display: inline-flex;
     justify-content: right;
@@ -94,38 +95,21 @@ body {
 
 .article {
     display: flex;
-    /* flex: 0 0 768px; */
+    flex: 0 0 768px;
     font-family: Arial, Helvetica, sans-serif;
     flex-flow: column;
 }
 
-.aboutbar {
+.aboutbar, .contactbar, .workbar {
     display: inline-flex;
-    flex: 0 0 180px;
-    height: 25%;
-    margin-bottom: 10px;
-    }
- 
+    /* flex: 0 0 180px; */
+    margin-bottom: 25px;
+}
+.aboutbar, .contactbar {
+    height: 25%
+}
 .workbar {
-    display: inline-flex;
-    flex: 0 0 500px;
-    height: 50%;
-    margin-bottom: 10px
-    }
-
-.contactbar {
-    display:inline-flex;
-    flex: 0 0 180px;
-    height: 25%;
-    margin-bottom: 10px;
-    }
-
-.contactbar ul {
-    list-style:none;
-    display: inline-flex;
-    align-items: center;
-    align-content:space-between;
-    
+    height: 50%
 }
 
 .lefttitle {
@@ -150,37 +134,59 @@ body {
     width: 100%;
     flex-flow: row wrap;
     align-items: flex-start;
-    align-content:space-around;
+    align-content:space-between;
     justify-content: space-between;
-   }
-
-#largework:hover {opacity: 100%;}
+    }
 
 .smallworktile {
     height: 48%;
-    width: 48%;
-    margin: 5px;
+    width: 49%;
     border: 5px #396dcd solid;
     }
 
-img:hover {opacity: 100%}
+.largeimage {
+    max-height: 235px;
+    width: 100%;
+    border:#396dcd 5px solid;
+    opacity: 60%;
+    object-fit: fill;
+}
 
+.smallimage {
+    width:100%;
+    object-fit: contain;
+    opacity: 60%;
+}
+
+img:hover {opacity: 1;
+    cursor: pointer;}
+    
 .tilelabels {
     position: relative; left: 5px; bottom: 75px;
     padding: 2px 2px;
     background:#396dcd;
     color:rgba(169, 169, 169, 0.827);
-    opacity: 50%;
     font-size: 10pt;
 }
 
-/* .barcontacts {
+.barcontacts {
     display: flex;
     width: 70%;
     flex-flow: row wrap;
-    padding: 10px 0 0 10px;
-} */
+    padding: 25px 0 0 20px;
+    }
 
+.barcontacts ul {
+    display: flex;
+    width: 100%;
+    padding: 50 0 0 0;
+    list-style: none;
+    font-size: 14pt;
+    color:#0a0f61;
+    text-decoration: underline #0a0f61 3px;
+    justify-items: baseline;
+    justify-content: space-between;
+}
 
 
 .footer {
