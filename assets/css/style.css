@@ -1,83 +1,9 @@
+
+/* universal selectors */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
-    background-color: #b9cef1;
-}
-
-.header {
-    display: flex;
-    align-items: bottom;
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-#headername {
-    float: left;
-    padding: 20px 30px;
-    background:rgb(57, 109, 205);
-    color:lightblue;
-    size: 100px 50px;
-    font-size: 20px;
-    ;
-}
-
-.header nav {
-    padding: 25px 50px;
-    margin-right: 10px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    margin-left: 15px;
-    display: inline-flex;
-    justify-content: right;
-    align-content: flex-end;
-    align-items: right;
-}
-
-.header nav ul {
-    list-style-type: none;
-    right-margin: 10px;
-    border-right: black, 10px;
-}
-
-a {
-    color: #ffffff;
-    font-size: 16px;
-    margin-right: 20px;
-    border-right: black 4px solid;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-    line-height: 125%;
-}
-
-.splash {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-}
-
-#splashbox {
-    position: absolute;
-    top: 150px; right: 50px;
-    margin: 20px 30px;
-    padding: 10px;
-    background:rgb(57, 109, 205);
-    color:lightblue;
-    size: 100px 50px;
-    font-size: 20px;
 }
 
 .float-left {
@@ -90,9 +16,85 @@ p {
     margin-left: 25px;
 }
 
+/* href formatting */
+a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+a::after {content: "\2503"}
+
+
+
+/* paragraph formatting */
+p {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* body */
+body {
+    background-color: #f4f4e9;
+}
+
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    padding: 40px 20px 20px 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #090e77;
+    color: #ffffff;
+}
+
+/* header title insert */
+#headername {
+    float: left;
+    padding: 10px 75px 10px 25px;
+    background:rgb(57, 109, 205);
+    color:lightblue;
+    size: 100px 50px;
+    font-size: 28pt;
+    ;
+}
+ /* header nav bar */
+.header nav {
+    padding: 0px 20px;
+    float: right;
+    position: absolute; right: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: right;
+
+}
+
+/* landing splash */
+.splash {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/splash-highlands.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+#splashbox {
+    position: absolute; right: 50px; top: 300px;
+    padding: 8px 20px;
+    background:rgb(57, 109, 205);
+    color:lightblue;
+    font-size: 20px;
+    box-shadow: 5px 5px 2px rgb(21, 88, 211);
+}
+
 .article {
     display: flex;
-    flex: 0. 0. 768px;
+    /* flex: 0 0 768px; */
     font-family: Arial, Helvetica, sans-serif;
     flex-flow: column;
 }
@@ -102,41 +104,84 @@ p {
     flex: 0 0 180px;
     height: 25%;
     margin-bottom: 10px;
-
-}
+    }
  
-
 .workbar {
     display: inline-flex;
-    flex: 0 0 360px;
+    flex: 0 0 500px;
     height: 50%;
     margin-bottom: 10px
+    }
 
-}
-.worktile {
-    display: flex;
-    flex: 0 0
-}
 .contactbar {
     display:inline-flex;
     flex: 0 0 180px;
     height: 25%;
     margin-bottom: 10px;
-}
+    }
 
+.contactbar ul {
+    list-style:none;
+    display: inline-flex;
+    align-items: center;
+    align-content:space-between;
+    
+}
 
 .lefttitle {
-    display: flex
-    flex: 0 0 250px;
-    width: 30%;
+    width: 20%;
+    font-size: 22pt;
+    text-align: right;
+    padding-right: 15px;
+    color: #0a0f61;
+    border-right: 4px solid #0a0f61;
+    }
+
+.barcolumns {
+    display: flex;
+    width: 70%;
+    flex-flow: column wrap;
+    padding: 10px 0 0 10px;
+    }
+
+.workframes {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content:space-around;
+    justify-content: space-between;
+   }
+
+#largework:hover {opacity: 100%;}
+
+.smallworktile {
+    height: 48%;
+    width: 48%;
+    margin: 5px;
+    border: 5px #396dcd solid;
+    }
+
+img:hover {opacity: 100%}
+
+.tilelabels {
+    position: relative; left: 5px; bottom: 75px;
+    padding: 2px 2px;
+    background:#396dcd;
+    color:rgba(169, 169, 169, 0.827);
+    opacity: 50%;
+    font-size: 10pt;
 }
 
-.barcontent {
-    flex: 0 0 250px;
+/* .barcontacts {
+    display: flex;
     width: 70%;
-    flex-wrap: wrap;
-    border-left: 8px solid darkgray;
-}
+    flex-flow: row wrap;
+    padding: 10px 0 0 10px;
+} */
+
+
 
 .footer {
     padding: 30px;
