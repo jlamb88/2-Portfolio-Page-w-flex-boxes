@@ -101,15 +101,17 @@ body {
 }
 
 .aboutbar, .contactbar, .workbar {
-    display: inline-flex;
-    /* flex: 0 0 180px; */
+    display: flex;
     margin-bottom: 25px;
 }
+
 .aboutbar, .contactbar {
-    height: 25%
+flex: 0 0 100px;
+height: 25%';
 }
 .workbar {
-    height: 50%
+    flex: 0 0 500px;
+    height: 50%;
 }
 
 .lefttitle {
@@ -123,20 +125,28 @@ body {
 
 .barcolumns {
     display: flex;
-    width: 70%;
-    flex-flow: column wrap;
+    width: 80%;
     padding: 10px 0 0 10px;
+    flex-flow: column wrap;
+    justify-content: space-around;
     }
 
-.workframes {
-    display: flex;
-    height: 50%;
+.upperframe, .lowerframe {
+    display: inline-flex;
+    height: 48%;
     width: 100%;
     flex-flow: row wrap;
-    align-items: flex-start;
+    }
+
+.upperframe {
+    border:#396dcd 5px solid;
+    }
+
+.lowerframe {
+    align-items: flex-end;
     align-content:space-between;
     justify-content: space-between;
-    }
+}
 
 .smallworktile {
     height: 48%;
@@ -145,16 +155,16 @@ body {
     }
 
 .largeimage {
-    max-height: 235px;
+    height: 100%;
     width: 100%;
-    border:#396dcd 5px solid;
     opacity: 60%;
     object-fit: fill;
-}
+    }
 
 .smallimage {
-    width:100%;
-    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     opacity: 60%;
 }
 
@@ -171,7 +181,7 @@ img:hover {opacity: 1;
 
 .barcontacts {
     display: flex;
-    width: 70%;
+    width: 80%;
     flex-flow: row wrap;
     padding: 25px 0 0 20px;
     }
@@ -179,12 +189,12 @@ img:hover {opacity: 1;
 .barcontacts ul {
     display: flex;
     width: 100%;
-    padding: 50 0 0 0;
+    /* padding: 50px 0 0 0; */
     list-style: none;
     font-size: 14pt;
     color:#0a0f61;
     text-decoration: underline #0a0f61 3px;
-    justify-items: baseline;
+    justify-items: center;
     justify-content: space-between;
 }
 
@@ -197,5 +207,5 @@ img:hover {opacity: 1;
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: 12px;
 }
