@@ -130,11 +130,12 @@ height: 30%';
 .barcolumns {
     display: flex;
     width: 80%;
-    padding: 10px 0 0 10px;
+    padding: 10px 10px 0 10px;
     flex-flow: column wrap;
     justify-content: space-around;
     }
 
+    /* frame formatting for work section to have a large upper image and small tile images below */
 .upperframe, .lowerframe {
     height: 48%;
     display: inline-flex;
@@ -158,6 +159,7 @@ height: 30%';
     height: 48%;
     width: 49%;
     border: 5px #396dcd solid;
+    background-color: #ccb9a2;
     object-fit: cover;
     }
 
