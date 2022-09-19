@@ -84,6 +84,7 @@ body {
     display: flex;
 }
 
+/* splash caption */
 #splashbox {
     position: absolute; right: 50px; top: 300px;
     padding: 8px 20px;
@@ -93,6 +94,7 @@ body {
     box-shadow: 5px 5px 2px rgb(21, 88, 211);
 }
 
+/* Main content area */
 .article {
     display: flex;
     flex: 0 0 768px;
@@ -100,20 +102,7 @@ body {
     flex-flow: column;
 }
 
-.aboutbar, .contactbar, .workbar {
-    display: flex;
-    margin-bottom: 25px;
-}
-
-.aboutbar, .contactbar {
-flex: 0 0 100px;
-height: 25%';
-}
-.workbar {
-    flex: 0 0 500px;
-    height: 50%;
-}
-
+/* Left side title bar */
 .lefttitle {
     width: 20%;
     font-size: 22pt;
@@ -122,6 +111,21 @@ height: 25%';
     color: #0a0f61;
     border-right: 4px solid #0a0f61;
     }
+
+/* Content sections */
+.aboutbar, .contactbar, .workbar {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.aboutbar, .contactbar {
+flex: 0 0 100px;
+height: 30%';
+}
+.workbar {
+    flex: 0 0 200px;
+    height: 40%;
+}
 
 .barcolumns {
     display: flex;
@@ -132,8 +136,8 @@ height: 25%';
     }
 
 .upperframe, .lowerframe {
-    display: inline-flex;
     height: 48%;
+    display: inline-flex;
     width: 100%;
     flex-flow: row wrap;
     }
@@ -149,41 +153,39 @@ height: 25%';
 }
 
 .smallworktile {
+    display: flex;
+    flex-wrap: wrap;
     height: 48%;
     width: 49%;
     border: 5px #396dcd solid;
-    }
-
-.largeimage {
-    height: 100%;
-    width: 100%;
-    opacity: 60%;
-    object-fit: fill;
-    }
-
-.smallimage {
-    height: 100%;
-    width: 100%;
     object-fit: cover;
+    }
+
+.largeimage, .smallimage {
+    height: 100%;
+    width: 100%;
     opacity: 60%;
-}
+    object-fit: cover;
+    }
 
 img:hover {opacity: 1;
-    cursor: pointer;}
+    cursor: pointer;
+    }
     
 .tilelabels {
-    position: relative; left: 5px; bottom: 75px;
-    padding: 2px 2px;
+    position: relative; left: 0px; bottom: 75px;
+    padding: 4px 4px;
     background:#396dcd;
     color:rgba(169, 169, 169, 0.827);
     font-size: 10pt;
-}
+    }
 
+/* Contact bar formatting */
 .barcontacts {
     display: flex;
     width: 80%;
     flex-flow: row wrap;
-    padding: 25px 0 0 20px;
+    padding: 25px 20px 0 20px;
     }
 
 .barcontacts ul {
@@ -196,16 +198,16 @@ img:hover {opacity: 1;
     text-decoration: underline #0a0f61 3px;
     justify-items: center;
     justify-content: space-between;
-}
+    }
 
-
+/* Footer formatting */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
+    }
 
 .footer h2 {
-    font-size: 12px;
-}
+    font-size: 16px;
+    }   
