@@ -120,11 +120,10 @@ body {
 
 .aboutbar, .contactbar {
 flex: 0 0 100px;
-height: 30%';
 }
 .workbar {
-    flex: 0 0 200px;
-    height: 40%;
+    flex: 0 0 500px;
+    max-height: 750px;
 }
 
 .barcolumns {
@@ -160,22 +159,23 @@ height: 30%';
     width: 49%;
     border: 5px #396dcd solid;
     background-color: #ccb9a2;
-    object-fit: cover;
     }
 
 .largeimage, .smallimage {
     height: 100%;
     width: 100%;
     opacity: 60%;
-    object-fit: cover;
+    object-fit: fill;
     }
 
-img:hover {opacity: 1;
-    cursor: pointer;
-    }
+
+#smalltile:hover img {opacity:1; cursor:pointer}
+#upperframe:hover img {opacity:1; cursor:pointer}
+.tilelabels:hover {cursor:pointer}
+
     
 .tilelabels {
-    position: relative; left: 0px; bottom: 75px;
+    position: relative; left: 0px; bottom: 60px;
     padding: 4px 4px;
     background:#396dcd;
     color:rgba(169, 169, 169, 0.827);
@@ -187,13 +187,12 @@ img:hover {opacity: 1;
     display: flex;
     width: 80%;
     flex-flow: row wrap;
-    padding: 25px 20px 0 20px;
+    padding: 25px 125px 0 125px;
     }
 
 .barcontacts ul {
     display: flex;
     width: 100%;
-    /* padding: 50px 0 0 0; */
     list-style: none;
     font-size: 14pt;
     color:#0a0f61;
