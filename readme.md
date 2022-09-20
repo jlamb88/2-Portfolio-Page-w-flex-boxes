@@ -2,58 +2,26 @@
 
 ## Portfolio Page
 
-## Description
-User Story
+### Description
 
-AS AN potential employee
-I WANT to greate a portfolio page
+User Story
+AS a potential employee <br>
+I WANT to create a portfolio page<br>
 SO THAT I can showcase my background and deployed portfolio of work samples and provide contact info to get hired for permanent or freelance positions
 
 
 Acceptance Criteria
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
+GIVEN I need to sample my previous work <br>
+WHEN hiring managers load my portfolio <br>
+THEN they are presented with my name, links to sections about me, my work, and how to contact me<br>
+WHEN they click one of the links in the navigation<br>
+THEN the UI scrolls to the corresponding section<br>
+WHEN they click on the link to the section about my work<br>
+THEN the UI scrolls to a section with titled images of my applications<br>
+WHEN I present my first application<br>
+THEN that application's image should be larger in size than the others<br>
+WHEN I resize the page or view the site on various screens and devices<br>
 THEN I am presented with a responsive layout that adapts to my viewport
 
-## Visuals
-
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
