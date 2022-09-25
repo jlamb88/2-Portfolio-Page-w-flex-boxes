@@ -25,3 +25,12 @@ THEN that application's image should be larger in size than the others<br>
 WHEN I resize the page or view the site on various screens and devices<br>
 THEN I am presented with a responsive layout that adapts to my viewport
 
+
+## Installation
+Github: git@github.com:https://github.com/jlamb88/2-Portfolio-Page-w-flex-boxes.git
+
+URL: https://jlamb88.github.io/2-Portfolio-Page-w-flex-boxes/
+
+## Usage
+
+![alt text](assets/images/screenshot.png)
