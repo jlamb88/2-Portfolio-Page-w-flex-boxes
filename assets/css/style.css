@@ -67,6 +67,7 @@ body {
 }
  /* header nav bar */
 .header nav {
+    display: inline-flex;
     padding: 0px 20px;
     float: right;
     position: absolute; right: 0px;
@@ -111,7 +112,8 @@ body {
 /* Main content area */
 .article {
     display: flex;
-    flex: 0 0 768px;
+    font-size: 14pt;
+    flex: 1 1;
     font-family: Arial, Helvetica, sans-serif;
     flex-flow: column;
 }
@@ -134,10 +136,12 @@ body {
 
 .aboutbar, .contactbar {
 flex: 1 1 100px;
+height: 15%;
 }
 .workbar {
     flex: 1 1 500px;
-    /* max-height: 750px; */
+    max-height: 750px;
+    height: 70%;
 }
 
 .barcolumns {
@@ -174,7 +178,6 @@ flex: 1 1 100px;
     height: 48%;
     width: 49%;
     border: 5px #396dcd solid;
-    
     margin-right: 0px;
     }
 
@@ -187,9 +190,9 @@ flex: 1 1 100px;
     }
 
 
-#smalltile:hover img {opacity:1; cursor:pointer}
-#upperframe:hover img {opacity:1; cursor:pointer}
-.tilelabels:hover {cursor:pointer}
+#smalltile:hover img {opacity:1}
+#upperframe:hover img {opacity:1}
+
 
     
 .tilelabels {
@@ -204,7 +207,6 @@ flex: 1 1 100px;
 .barcontacts {
     display: flex;
     width: 80%;
-    flex-flow: row wrap;
     padding: 25px 125px 0 125px;
     }
 
@@ -237,20 +239,18 @@ flex: 1 1 100px;
 
 @media screen and (max-width: 768px) {
      
-body {
+p, .footer h2, .barcontacts li {
           flex-flow: column wrap;
           font-size: 10pt;
         }
+
 .lefttitle {
     font-size: 12pt;
 }
 
 .smallworktile {
     width: 100%;
-    margin: auto;
-    max-height: 100px;
+    margin: 5px 0px;
+    max-height: 120px;
 }
-        /* Make the sidebar stack below the body
-        aside {
-          order: 2;
-        } */
+}
